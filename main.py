@@ -19,6 +19,10 @@ def main() -> None:
         window
     )
 
+    solved: bool = maze._solve_r()
+    if not solved:
+        print("maze cannot be solved")
+
     window.wait_for_close()
 
 

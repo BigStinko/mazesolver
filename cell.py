@@ -52,7 +52,7 @@ class Cell:
 
         if self._x1 > to_cell._x1:  # to_cell is to the right
             self._window.draw_line(
-                Line(Point(self.x1, y_mid), Point(x_mid, y_mid)),
+                Line(Point(self._x1, y_mid), Point(x_mid, y_mid)),
                 fill_color,
             )
             self._window.draw_line(
